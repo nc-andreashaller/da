@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    {
+      "id": "blocks"
+    },
+    {
+      "id": "icons"
+    },
+    {
+      "id": "assets"
+    }
+  ]
+}
+    
