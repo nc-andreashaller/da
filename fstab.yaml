@@ -1,2 +1,4 @@
 mountpoints:
-  /: https://drive.google.com/drive/u/0/folders/1mP4JkYwex9QHTulDZcITLKFjK_svdCXi
+  /:
+    url: https://content.da.live/nc-andreashaller/da/
+    type: markup
