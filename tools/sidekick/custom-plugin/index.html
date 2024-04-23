@@ -23,7 +23,7 @@
             let e = document.createElement('p')
             e.textContent = document.getElementById('text');
             body.querySelector('main').prepend(e);
-            port2.postMessage({ body });
+            port2.postMessage({ body: body.outerHTML });
           });
           return async (e) => {
             console.log('message', e.data);
