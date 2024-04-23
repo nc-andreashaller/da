@@ -16,6 +16,14 @@
       "includePaths": [ "/edit#/**" ]
     },
     {
+      "id": "custom",
+      "title": "Custom",
+      "environments": [ "edit" ],
+      "type": "palette",
+      "url": "",
+      "includePaths": [ "/edit#/**" ]
+    },
+    {
       "id": "assets"
     }
   ]
