@@ -14,6 +14,7 @@
       }
     
       function initPort(e) {
+        console.log('init port', e.data);
         if (e.data.init && e.data.id === new URLSearchParams(location.search).get('da-id')) {
           const [port2] = e.ports;
           port2.onmessage = onMessage(port2);
