@@ -21,7 +21,7 @@
           setBody(initBody);
           document.getElementById('prepend').addEventListener('click', () => {
             let e = document.createElement('p')
-            e.textContent = document.getElementById('text');
+            e.textContent = document.getElementById('text').value;
             body.querySelector('main').prepend(e);
             port2.postMessage({ body: body.outerHTML });
           });
