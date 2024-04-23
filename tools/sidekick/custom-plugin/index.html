@@ -2,12 +2,33 @@
 <html>
   <head>
     <title>Custom Plugin</title>
+    <script type="text/javascript">
+      function onMessage(port2) {
+        return async (e) => {
+          if (e.data.body) {
+            const html = document.createElement('html');
+            html.innerHTML = e.data.body;
+            document.getElementById('output').textContent = html.querySelector('p').textContent;
+          }
+        };
+      }
+    
+      function initPort(e) {
+        if (e.data.init && e.data.id === new URLSearchParams(location.search).get('da-id')) {
+          const [port2] = e.ports;
+          port2.onmessage = onMessage(port2);
+        }
+      }
+    
+      window.addEventListener('message', initPort);
+    </script>
   </head>
   <body>
     <header></header>
     <main>
       <h1>Custom Plugin</h1>
       <p>So many possibilities ...</p>
+      <p id="output"></p>
     </main>
     <footer></footer>
   </body>
