@@ -7,6 +7,15 @@
       "id": "icons"
     },
     {
+      "id": "placeholders",
+      "title": "Placeholders",
+      "environments": [ "edit" ],
+      "type": "items",
+      "format": "{{{{content}}}}",
+      "url": "https://main--da--nc-andreashaller.hlx.live/placeholders.json",
+      "includePaths": [ "/edit#/**" ]
+    },
+    {
       "id": "assets"
     }
   ]
