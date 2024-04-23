@@ -20,7 +20,7 @@
       "title": "Custom",
       "environments": [ "edit" ],
       "type": "palette",
-      "url": "",
+      "url": "https://main--da--nc-andreashaller.hlx.live/tools/sidekick/custom-plugin/index.html",
       "includePaths": [ "/edit#/**" ]
     },
     {
