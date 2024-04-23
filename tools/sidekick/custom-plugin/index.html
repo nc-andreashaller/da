@@ -5,6 +5,7 @@
     <script type="text/javascript">
       function onMessage(port2) {
         return async (e) => {
+          console.log('message', e.data);
           if (e.data.body) {
             const html = document.createElement('html');
             html.innerHTML = e.data.body;
@@ -14,8 +15,8 @@
       }
     
       function initPort(e) {
-        console.log('init port', e.data);
         if (e.data.init && e.data.id === new URLSearchParams(location.search).get('da-id')) {
+          console.log('init', e.data);
           const [port2] = e.ports;
           port2.onmessage = onMessage(port2);
         }
