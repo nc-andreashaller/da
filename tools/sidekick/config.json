@@ -12,7 +12,7 @@
       "environments": [ "edit" ],
       "type": "items",
       "format": "{{{{content}}}}",
-      "url": "https://main--da--nc-andreashaller.hlx.live/placeholders.json",
+      "url": "https://admin.da.live/source/nc-andreashaller/da/placeholders.json",
       "includePaths": [ "/edit#/**" ]
     },
     {
