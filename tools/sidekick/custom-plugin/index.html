@@ -9,7 +9,7 @@
           if (e.data.body) {
             const html = document.createElement('html');
             html.innerHTML = e.data.body;
-            document.getElementById('output').textContent = html.querySelector('p').textContent;
+            document.getElementById('output').textContent = html.querySelector('h1, h2, h3, h4, h5').textContent;
           }
         };
       }
