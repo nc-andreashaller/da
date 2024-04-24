@@ -22,7 +22,7 @@
           document.getElementById('prepend').addEventListener('click', () => {
             let e = document.createElement('p')
             e.textContent = document.getElementById('text').value;
-            body.querySelector('main').prepend(e);
+            body.querySelector('main div').prepend(e);
             port2.postMessage({ body: body.outerHTML });
           });
           return async (e) => {
